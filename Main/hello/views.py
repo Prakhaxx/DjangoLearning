@@ -1,0 +1,13 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def index(request):
+    return HttpResponse("Hello Pagal  WOrld!")
+def prakhar(request):
+       return HttpResponse("Hello  Bahut Bade !!.Pagal  WOrld!")  
+def greet(request,name):
+    return render(request,"First/greet.html",{
+      "name":name.capitalize()
+    })
+def  pagal(request):
+    return render(request,"First/pagal.html") 
